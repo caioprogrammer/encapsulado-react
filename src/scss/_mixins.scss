@@ -1,0 +1,11 @@
+@mixin commonButton {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(180deg,#26c921 40%, #237923 100%);;
+  padding: 16px;
+  border-radius: 25px;
+  width: 100%;
+  display: block;
+  max-width: 500px;
+}
