@@ -19,7 +19,7 @@ export default function Hero() {
           <Button image={true} />
         </div>
         <div className="hero__image">
-          <img src={"https://via.placeholder.com/500x450"} alt="teste" />
+          <img src={"https://reveravit.com.br/img/frascos-principal.png"} alt="teste" />
         </div>
       </div>
     </div>

@@ -5,6 +5,7 @@ import { About } from './components/About/About'
 import { Benefits } from './components/Benefits/Benefits'
 import { Faq } from './components/Faq/Faq'
 import Hero from './components/Hero/Hero'
+import { Garantee } from './components/Garantee/Garantee'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Benefits />
       <About />
       {/* <Faq /> */}
+      <Garantee />
     </div>
   )
 }
