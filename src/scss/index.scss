@@ -54,16 +54,46 @@ html {
 
 
 .benefits {
-  display: grid;
-  gap: 24px;
-  margin-top: -5rem;
-  grid-template-columns: repeat(6, 1fr);
-  @media screen and (max-width: 1280px) {
-    grid-template-columns: repeat(3, 1fr);
+  &__content {
+    display: grid;
+    gap: 24px;
+    margin-top: -5rem;
+    grid-template-columns: repeat(6, 1fr);
+    @media screen and (max-width: 1280px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &.no-margin {
+      margin-top: 64px;
+      grid-template-columns: repeat(4, 1fr);
+      @media screen and (max-width: 1280px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .benefits__box {
+        min-height: 220px;
+      }
+    }
   }
-  @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(1, 1fr);
+  &:nth-child(1) {
+    padding: 120px 0;
   }
+  &__title {
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: $greenDark;
+    text-align: center;
+    text-transform: uppercase;
+    span {
+      display: block;
+      color: $greenLight;
+    }
+  }
+  
   &__box {
     background-color: #fff;
     border-bottom: 2px solid $borderLine;
@@ -177,7 +207,45 @@ html {
   }
 }
 
-
+.nothing {
+  background-color: $greenDark;
+  color: #fff;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0,.3);
+  padding-bottom: 40px;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
+    img {
+      margin-top: -50px;
+    }
+    &--text {
+      margin-left: 80px;
+      text-align: center;
+      @media screen and (max-width: 1024px) {
+        margin-left: 0;
+      }
+      h3 {
+        font-size: 4.2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 24px;
+      }
+      p {
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 24px;
+      }
+      b {
+        font-weight: 700;
+        font-size: 2rem
+      }
+    }
+  }
+}
 
 
 

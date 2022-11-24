@@ -1,32 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { benefits } from '../../data/datas';
 
 export const Benefits = () => {
   return (
     <div className='container'>
       <div className='benefits'>
-        <div className='benefits__box'>
-          <img src="https://reveravit.com.br/img/10.png" alt="Icones" width={60} height={60}/>
-          <span>Intensifica a queima de gordura</span>
-        </div>
-        <div className='benefits__box'>
-          <img src="https://reveravit.com.br/img/10.png" alt="Icones" width={90} height={90}/>
-          <span>100% natural, sem contraindicações</span>
-        </div>
-        <div className='benefits__box'>
-          <img src="https://reveravit.com.br/img/10.png" alt="Icones" width={90} height={90}/>
-          <span>Intensifica a queima de gordura</span>
-        </div>
-        <div className='benefits__box'>
-          <img src="https://reveravit.com.br/img/10.png" alt="Icones" width={90} height={90}/>
-          <span>100% natural, sem contraindicações</span>
-        </div>
-        <div className='benefits__box'>
-          <img src="https://reveravit.com.br/img/10.png" alt="Icones" width={90} height={90}/>
-          <span>Intensifica a queima de gordura</span>
-        </div>
-        <div className='benefits__box'>
-          <img src="https://reveravit.com.br/img/10.png" alt="Icones" width={90} height={90}/>
-          <span>100% natural, sem contraindicações</span>
+        <div className='benefits__content'>
+        {benefits.map((item, index) =>
+          <div className='benefits__box' key={index}>
+            <img src={item.image} alt="Icones" width={60} height={60}/>
+            <span>{item.benefit}</span>
+          </div>
+        )}
         </div>
       </div>
     </div>

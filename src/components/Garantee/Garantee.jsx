@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+
+import { data } from '../../data/datas';
 
 export const Garantee = () => {
   return (
@@ -15,62 +17,15 @@ export const Garantee = () => {
          que seu corpo queime gordura de forma rápida e definitiva.
         </h4>
         <div className='garantee__content'>
-          <div className="garantee__content--box">
-            <img src="https://via.placeholder.com/120" alt="3" />
-            <div className='text'>
-              <p>
-                Acetato de Retinol
-              </p>
-              <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Expedita atque fuga sequi animi, tenetur earum reprehenderit doloribus nostrum odio nesciunt, 
-                libero rem odit itaque fugiat! Minus quod minima unde, modi consequuntur alias error atque! 
-                Harum dolores corporis commodi tenetur quasi nemo, impedit doloribus veniam vel quisquam 
-                 officiis tempora voluptates optio in sed consectetur. In maiores minus voluptas? 
-                 Vero totam dolor est vitae veniam aut alias cum. Voluptatem culpa omnis veniam possimus neque! 
-                 Corrupti facilis omnis minus ratione blanditiis ut vero! Nam suscipit obcaecati est sequi id 
-                 laborum officiis qui eum. Quis quia qui ipsa eveniet pariatur corrupti hic maiores
-              </span>
-            </div>
+        { data.map( (item, index) => 
+          <div className="garantee__content--box" key={index} >
+          <img src={item.image} alt="3" />
+          <div className='text'>
+            <p>{item.title}</p>
+            <span>{item.content}</span>
           </div>
-
-          <div className="garantee__content--box">
-            <img src="https://via.placeholder.com/120" alt="3" />
-            <div className='text'>
-              <p>
-                Acetato de Retinol
-              </p>
-              <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Expedita atque fuga sequi animi, tenetur earum reprehenderit doloribus nostrum odio nesciunt, 
-                libero rem odit itaque fugiat! Minus quod minima unde, modi consequuntur alias error atque! 
-                Harum dolores corporis commodi tenetur quasi nemo, impedit doloribus veniam vel quisquam 
-                 officiis tempora voluptates optio in sed consectetur. In maiores minus voluptas? 
-                 Vero totam dolor est vitae veniam aut alias cum. Voluptatem culpa omnis veniam possimus neque! 
-                 Corrupti facilis omnis minus ratione blanditiis ut vero! Nam suscipit obcaecati est sequi id 
-                 laborum officiis qui eum. Quis quia qui ipsa eveniet pariatur corrupti hic maiores
-              </span>
-            </div>
-          </div>
-
-          <div className="garantee__content--box">
-            <img src="https://via.placeholder.com/120" alt="3" />
-            <div className='text'>
-              <p>
-                Acetato de Retinol
-              </p>
-              <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Expedita atque fuga sequi animi, tenetur earum reprehenderit doloribus nostrum odio nesciunt, 
-                libero rem odit itaque fugiat! Minus quod minima unde, modi consequuntur alias error atque! 
-                Harum dolores corporis commodi tenetur quasi nemo, impedit doloribus veniam vel quisquam 
-                 officiis tempora voluptates optio in sed consectetur. In maiores minus voluptas? 
-                 Vero totam dolor est vitae veniam aut alias cum. Voluptatem culpa omnis veniam possimus neque! 
-                 Corrupti facilis omnis minus ratione blanditiis ut vero! Nam suscipit obcaecati est sequi id 
-                 laborum officiis qui eum. Quis quia qui ipsa eveniet pariatur corrupti hic maiores
-              </span>
-            </div>
-          </div>
+        </div>
+        ) }
         </div>
       </div>
     </section>
