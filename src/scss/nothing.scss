@@ -1,0 +1,40 @@
+.nothing {
+    background-color: $greenDark;
+    color: #fff;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0,.3);
+    padding-bottom: 40px;
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media screen and (max-width: 1024px) {
+        flex-direction: column;
+      }
+      img {
+        margin-top: -50px;
+      }
+      &--text {
+        margin-left: 80px;
+        text-align: center;
+        @media screen and (max-width: 1024px) {
+          margin-left: 0;
+        }
+        h3 {
+          font-size: 4.2rem;
+          text-transform: uppercase;
+          font-weight: 700;
+          margin-bottom: 24px;
+        }
+        p {
+          font-size: 1.8rem;
+          font-weight: 400;
+          margin-bottom: 24px;
+        }
+        b {
+          font-weight: 700;
+          font-size: 2rem
+        }
+      }
+    }
+  }
+  

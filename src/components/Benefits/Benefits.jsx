@@ -1,6 +1,7 @@
 import React from 'react';
 import { benefits } from '../../data/datas';
 
+
 export const Benefits = () => {
   return (
     <div className='container'>
