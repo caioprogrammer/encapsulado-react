@@ -6,6 +6,7 @@ import Hero from './components/Hero/Hero'
 import { Garantee } from './components/Garantee/Garantee'
 import { BenefitsBuy } from './components/Benefits/BenefitsBuy'
 import { Nothing } from './components/Nothing/Nothing'
+import Showcase from './components/Showcase/Showcase'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       {/* <Faq /> */}
       <Garantee />
+      <Showcase />
       <BenefitsBuy />
       <Nothing />
     </div>

@@ -8,10 +8,11 @@
 @import "nothing";
 
 
-button {
+a.cta {
   @include commonButton;
   margin-top: 50px;
   margin-bottom: 12px;
+  text-decoration: none;
     p {
       color: #fff;
       text-transform: uppercase;
@@ -90,5 +91,100 @@ button {
   transition: height 0.35s ease;
   &.show {
     height: auto;
+  }
+}
+
+
+.showcase {
+  background: $greenDark;
+  padding: 64px 0;
+  margin-top: 80px;
+  &-content {
+    &__title {
+      h2 {
+        text-align: center;
+        font-size: 4.2rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 24px;
+        span {
+          display: block;
+          color: $greenLight;
+        }
+      }
+      h5 {
+        font-size: 2rem;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 48px;
+      }
+    }
+    &__boxes {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+  }
+}
+
+
+.box {
+  background-color: #fff;
+  max-width: 420px;
+  border: 2px solid $greenLight;
+  padding: 2px;
+  border-radius: 20px;
+  &__header {
+    background-color: $greenLight;
+    border-radius: 20px 20px 0 0px;
+    text-align: center;
+    padding: 5px 0;
+    h2 {
+      font-size: 4.2rem;
+      color: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-size: 2.4rem;
+      padding: .4rem 0;
+      color: #38543c;
+      background-color: #14fb93;
+      margin-bottom: -5px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+  &__content {
+    padding: 0 24px;
+    img {
+      max-width: 100%;
+    }
+    h2 {
+      font-size: 5.4rem;
+      color: $greenLight;
+      font-weight: 800;
+      text-align: center;
+      span {
+        font-size: 3.2rem;
+        color: #222;
+        font-weight: 500;
+        display: block;
+        &:first-child {
+          color: $greenDark;
+        }
+      }
+    }
+  }
+  &__footer {
+    padding: 12px 24px;
+    text-align: center;
+    span {
+      font-weight: 500;
+      color: #222;
+      font-size: 2.4rem;
+    }
   }
 }

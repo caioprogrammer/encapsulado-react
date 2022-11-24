@@ -4,9 +4,9 @@ import meiosDePagamento from '../../images/meiosdepagamento.png'
 export const Button = (props) => {
   return (
     <>
-      <button>
+      <a className='cta' href={props.link}>
         <p>Comprar agora</p>
-      </button>
+      </a>
       { props.image &&
         <img src={meiosDePagamento} width={400} alt="Formas de pagamento aceitas" />
       }

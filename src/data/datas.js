@@ -122,3 +122,66 @@ export const benefitsBuy = [
   },
 
 ]
+
+export const products = [
+  {
+    id: 1,
+    headerTitle: "Leve 1 Pote",
+    contentImage: "https://reveravit.com.br/img/frascos-principal.png",
+    contentInstallments: {
+      parcelado: "10x de",
+      total: "R$ 9,70",
+      avista: "ou R$ 97 a vista",
+    },
+    link: "https://google.com"
+  },
+
+  {
+    id: 2,
+    headerTitle: "Leve 3 Potes",
+    headerSubtitle: "Mais vendido",
+    contentImage: "https://reveravit.com.br/img/frascos-principal.png",
+    contentInstallments: {
+      parcelado: "10x de",
+      total: "R$ 19,70",
+      avista: "ou R$ 197 a vista",
+    },
+    link: "https://google.com"
+  },
+
+  {
+    id: 3,
+    headerTitle: "Leve 2 Potes",
+    contentImage: "https://reveravit.com.br/img/frascos-principal.png",
+    contentInstallments: {
+      parcelado: "10x de",
+      total: "R$ 14,70",
+      avista: "ou R$ 147 a vista",
+    },
+    link: "https://google.com"
+  },
+
+  // {
+  //   id: 4,
+  //   headerTitle: "Leve 2 Potes",
+  //   contentImage: "https://reveravit.com.br/img/frascos-principal.png",
+  //   contentInstallments: {
+  //     parcelado: "10x de",
+  //     total: "R$ 14,70",
+  //     avista: "ou R$ 147 a vista",
+  //   },
+  //   link: "https://google.com"
+  // },
+
+  // {
+  //   id: 5,
+  //   headerTitle: "Leve 2 Potes",
+  //   contentImage: "https://reveravit.com.br/img/frascos-principal.png",
+  //   contentInstallments: {
+  //     parcelado: "10x de",
+  //     total: "R$ 14,70",
+  //     avista: "ou R$ 147 a vista",
+  //   },
+  //   link: "https://google.com"
+  // },
+]
