@@ -125,6 +125,9 @@ a.cta {
       align-items: center;
       justify-content: space-between;
       gap: 24px;
+      @media screen and (max-width: 1024px) {
+        flex-direction: column;
+      }
     }
   }
 }
