@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Button } from '../Button/Button'
 import { products } from '../../data/datas'
 
@@ -6,7 +6,7 @@ export const Product = () => {
   return (
     <>
       {products.map((item, index) =>
-        <div className='box' key={index}>
+        <div className={`box`} key={index}>
           <div className='box__header'>
             <h2>{item.headerTitle}</h2>
             {item.headerSubtitle && 
